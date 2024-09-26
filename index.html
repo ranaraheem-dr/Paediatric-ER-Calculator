@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <title>Pediatric ER Calculator</title> <!-- Title of the webpage -->
+    
+    <link rel="stylesheet" href="styles.css"> <!-- Main stylesheet for styling -->
+    <script src="medications.js" type="module"></script> <!-- Medication data -->
+    <script src="main.js" type="module"></script> <!-- Main script for calculations -->
+</head>
+<body>
+    <div class="container"> <!-- Main container for content -->
+        <h1>Pediatric ER Calculator</h1> <!-- Main heading of the application -->
+        
+        <p class="creator-message">Crafted by Dr Rana Raheem for caregivers to uplift clinical rationale and improve outcomes for pediatric patients.</p> <!-- Creator's message -->
+
+        <div class="input-section"> <!-- Input section for weight entry -->
+            <label for="weight">Enter Weight (kg):</label> <!-- Label for weight input -->
+            <input type="number" id="weight" placeholder="Enter weight in kg" min="1" max="100" step="0.1"> <!-- Input for weight -->
+        </div>
+
+        <!-- Medications Section -->
+        <h2>Medications</h2> <!-- Heading for medications -->
+        <div class="medications-section"> <!-- Container for medications tables -->
+
+            <!-- Antibiotics Table -->
+            <h3>Antibiotics</h3>
+            <table id="medsAntibioticsTable">
+                <thead>
+                    <tr>
+                        <th>Medication</th>
+                        <th>Dose</th>
+                        <th>Formula Used</th>
+                        <th>Indications</th>
+                    </tr>
+                </thead>
+                <tbody id="meds-antibiotics-tbody"></tbody> <!-- Body for antibiotics table -->
+            </table>
+
+            <!-- Fluid Resuscitation Table -->
+            <h3>Fluid Resuscitation</h3>
+            <table id="medsFluidResusTable">
+                <thead>
+                    <tr>
+                        <th>Medication</th>
+                        <th>Dose</th>
+                        <th>Formula Used</th>
+                        <th>Indications</th>
+                    </tr>
+                </thead>
+                <tbody id="meds-fluid-resus-tbody"></tbody> <!-- Body for fluid resuscitation table -->
+            </table>
+
+            <!-- Additional Medication Categories -->
+            <!-- Repeat similar structure for other medication categories as needed -->
+        
+        </div> <!-- Closing medications section -->
+
+        <!-- Lab Corrections Section -->
+        <h2>Lab Corrections</h2> <!-- Heading for lab corrections -->
+        <table id="labsTable"> <!-- Table for lab corrections -->
+            <thead>
+                <tr>
+                    <th>Correction</th>
+                    <th>Dosage</th>
+                </tr>
+            </thead>
+            <tbody id="labs-tbody"></tbody> <!-- Body for dynamically populated lab corrections data -->
+        </table> <!-- Closing lab corrections table -->
+        
+    </div> <!-- Closing main container -->
+</body>
+</html>

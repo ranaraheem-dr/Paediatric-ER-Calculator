@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "es6",
+        "baseUrl": "./",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/types/*"
+            ]
+        }
+    },
+    "include": [
+        "index.html",             // Include the main HTML file for reference
+        "styles.css",             // Include the stylesheet for styling the application
+        "medications.js",         // Include the medications data file
+        "main.js"                 // Include the main JavaScript for operations
+    ]
+}
